@@ -54,5 +54,32 @@ image: '/guns/shotgun.svg',
 description:
 'The other pump gun. Twin action bars, a simple safety on the tang, and a price that leaves money for ammunition.',
 },
+{
+name: 'Beretta 92FS',
+type: 'Pistol',
+caliber: '9mm',
+price: 649,
+image: '/guns/beretta.jpg',
+description:
+'A full-size, metal-framed service pistol with a double-action/single-action trigger and an open-slide design.',
+},
+{
+name: 'M4 Carbine',
+type: 'Rifle',
+caliber: '5.56mm',
+price: 1099,
+image: '/guns/m4-carbine.jpg',
+description:
+'A compact, gas-operated rifle platform with an adjustable stock and a lightweight profile.',
+},
+{
+name: 'Benelli M4',
+type: 'Shotgun',
+caliber: '12 Gauge',
+price: 1799,
+image: '/guns/benelli m4.jpg',
+description:
+'A semi-automatic 12-gauge platform with a robust operating system and a short, practical profile.',
+},
 ]
 export default GUNS

@@ -104,6 +104,39 @@
   font-size: 0.9rem;
 }
 
+.catalog-controls {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(130px, 0.55fr) minmax(170px, 0.7fr);
+  gap: 12px;
+  margin: 12px 0 20px;
+}
+
+.catalog-controls label {
+  display: grid;
+  gap: 5px;
+  color: var(--steel);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.catalog-controls input,
+.catalog-controls select {
+  min-width: 0;
+  width: 100%;
+  min-height: 42px;
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  color: var(--ink);
+  background: #fff;
+  font: inherit;
+}
+
+.catalog-controls input:focus,
+.catalog-controls select:focus {
+  border-color: var(--brass);
+}
+
 .stock {
   list-style: none;
   margin: 0;
@@ -136,9 +169,12 @@
 
 .card-img {
   width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+  height: 180px;
+  object-fit: contain;
+  padding: 14px;
+  margin-bottom: 6px;
   border-bottom: 1px solid var(--line);
+  background: #fff;
 }
 
 .card .name,
@@ -156,6 +192,12 @@
   color: var(--brass);
   font-weight: 600;
   font-variant-numeric: tabular-nums;
+}
+
+.empty-results {
+  padding: 28px 0;
+  color: var(--steel);
+  text-align: center;
 }
 
 .type {
@@ -220,4 +262,14 @@
 
 .footer p {
   margin: 0;
+}
+
+@media (max-width: 560px) {
+  .catalog-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .catalog-search {
+    grid-column: 1 / -1;
+  }
 }
